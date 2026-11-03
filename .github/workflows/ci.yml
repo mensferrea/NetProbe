@@ -1,0 +1,32 @@
+name: NetProbe CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y cmake g++ ninja-build
+
+      - name: Configure CMake
+        run: |
+          cmake -B build -S . -G "Ninja" -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTS=ON
+
+      - name: Build NetProbe
+        run: |
+          cmake --build build -j$(nproc)
+
+      - name: Run GoogleTest Suite
+        run: |
+          cd build && ./netprobe_tests
