@@ -6,12 +6,12 @@
 
 **Высокопроизводительный системный анализатор и диагност сетевых пакетов на Linux**
 
-[![C++20](https://img.shields.io/badge/C%2B%2B-20-blue.svg?style=for-the-badge&logo=c%2B%2B)](https://en.cppreference.com/w/cpp/20)
-[![Linux](https://img.shields.io/badge/Linux-Kernel%205%2B-orange.svg?style=for-the-badge&logo=linux)](https://kernel.org)
-[![POSIX RAW Sockets](https://img.shields.io/badge/Sockets-AF__PACKET-red.svg?style=for-the-badge)](https://man7.org/linux/man-pages/man7/packet.7.html)
-[![CMake](https://img.shields.io/badge/CMake-3.22%2B-064F8C.svg?style=for-the-badge&logo=cmake)](https://cmake.org)
-[![GoogleTest](https://img.shields.io/badge/Tests-GoogleTest%201.14-green.svg?style=for-the-badge&logo=google)](https://github.com/google/googletest)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+[![C++20](https://img.shields.io/badge/C%2B%2B-20-blue.svg?&logo=c%2B%2B)](https://en.cppreference.com/w/cpp/20)
+[![Linux](https://img.shields.io/badge/Linux-Kernel%205%2B-orange.svg?&logo=linux)](https://kernel.org)
+[![POSIX RAW Sockets](https://img.shields.io/badge/Sockets-AF__PACKET-red.svg?)](https://man7.org/linux/man-pages/man7/packet.7.html)
+[![CMake](https://img.shields.io/badge/CMake-3.22%2B-064F8C.svg?&logo=cmake)](https://cmake.org)
+[![GoogleTest](https://img.shields.io/badge/Tests-GoogleTest%201.14-green.svg?&logo=google)](https://github.com/google/googletest)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?)](LICENSE)
 
 *Разработка системного уровня: захват сырого трафика через `AF_PACKET` / `SOCK_RAW`, Zero-Copy парсинг заголовков L2–L4 на C++20 `std::span`, верификация контрольных сумм RFC 791/793, аналитика трафика и ICMP Echo диагностика.*
 
